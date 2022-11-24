@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINE GAME</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body  onkeyup="onHandleKey(event)" onload="initGame()" oncontextmenu="return false"  class="backImg" >
+    <h5>Made By: Yonatan Finerman</h5>
+    <h1>Mine-Sweeper</h1>
+    <button class="darkBtn" onclick="OnDarkMode(this)"><span>🌛</span></button>
+    <!-- <img src="img/shrek1.png" class="shrek" onclick="initGame()"> -->
+    <!-- <h2>lives Left: <span></span></h2> -->
+    <h3>⏰time: <span></span></h3>
+
+    <img src="img/shrek1.png" class="shrek" onclick="initGame()">
+    <div>
+
+        <button class="b1" onclick="changeLevel(this); initGame();">Easy😴 </button>
+        <button class="b2" onclick="changeLevel(this); initGame();">Midium😃 </button>
+        <button class="b3" onclick="changeLevel(this); initGame();">Hard🤬 </button>
+    </div>
+    <div>
+        <h2> <span></span></h2>
+        <button class="hint" onclick="useHint()"></button>
+        
+    </div>
+
+    <button class="boom" onclick="onBoomClick()">7BOOM💣 <span></span></button>
+    <button class="safeBtn" onclick="onSafeClick()">Safe-Clicks: <span></span></button>
+    <button class="megaHint" onclick="onMegaHintClick(this)">MegaHint</button>
+    <!-- <button class="exter" onclick="onClickExterminator(this)">Terminator🤖</button> -->
+
+    <div  class="modalWin" >
+        <h3>you Win🏆</h3>
+        <img src="img/shrek-donkey.gif" class="shrekModal" onclick="initGame(this)" alt=""> 
+        
+        
+    </div>
+    <div  class="modalLose" >
+        <h3>you Lose😿</h3>
+        <img src="img/shrek-donkey.gif" class="shrekModal" onclick="initGame()" alt=""> 
+        
+
+    </div>
+    <div class="board"  >
+      
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/util.js"></script>
+    
+
+
+
+
+</body>
+</html>
+
+

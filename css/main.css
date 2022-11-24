@@ -1,0 +1,195 @@
+body {
+    text-align: center;
+
+    /* background-image: url(../img/shrek10.jpg);
+    font-family: monospace;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    
+
+
+}
+
+h1 {
+    color: white;
+
+    font-size: 75px;
+}
+
+.shrek {
+
+    left: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+h2 {
+    color: white;
+    display: inline;
+}
+
+.modalWin {
+
+    margin: auto;
+    width: 200px;
+    height: 150px;
+    display: none;
+
+    background-color: rgb(79, 191, 208);
+
+    color: gold;
+    
+}
+
+.modalLose {
+    margin: auto;
+    width: 200px;
+    height: 150px;
+    display: none;
+
+    background-color: rgb(240, 9, 9);
+    color: white;
+}
+
+
+
+
+table {
+    
+    margin: auto;
+    margin-top: 0px;
+
+    border: 5px rgb(140, 213, 29) solid;
+}
+
+
+
+.cell {
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+
+button {
+
+
+
+
+    width: 60px;
+    height: 40px;
+
+}
+
+.shrekModal {
+
+    width: 150px;
+    height: 100px;
+
+    left: 20px;
+
+
+}
+
+.b1 {
+    background-color: green;
+    border-radius: 25%;
+    color: white;
+}
+
+.b2 {
+    background-color: yellow;
+    border-radius: 25%;
+    color: white;
+}
+
+.b3 {
+    background-color: rgb(105, 17, 2);
+    border-radius: 25%;
+    color: white;
+}
+
+h3 {
+    color: gold;
+}
+
+h2 span {
+    color: red;
+}
+
+.hint {
+    background-color: rgb(143, 217, 31);
+    border: rgb(143, 217, 31);
+    font-size: 20px;
+    width: 90px;
+}
+.closed {
+
+    background-image: url(../img/shrek6.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+
+}
+.safeBtn{
+    background-color: rgb(26, 84, 179);
+    width: 100px;
+    height: 50px;
+    color: white;
+    border: orange 1px solid;
+    border-radius: 10%;
+    
+
+}
+.boom{
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    color: white;
+    border: white 1px solid;
+    border-radius: 10%;
+
+}
+.megaHint{
+    background-color:green;
+    width: 100px;
+    height: 50px;
+    color: white;
+    border: rgb(26, 84, 179) 1px solid;
+    border-radius: 10%;
+       
+}
+.exter{
+    background-color:gold;
+    width: 100px;
+    height: 50px;
+    color: purple;
+    border: rgb(26, 84, 179) 1px solid;
+    border-radius: 10%;
+}
+
+.safe{
+    box-shadow: 5px 5px 15px 5px rgb(234, 8, 8);
+}
+h5{
+    color: white;
+}
+.darkBtn{
+    background-color:rgb(143, 217, 31) ;
+    border: solid 0px rgb(143, 217, 31);
+}
+
+.dark{
+    background-color: black;
+    color: white;
+    border: solid 0px white;
+}
+
+.backImg{
+    background-image: url(../img/shrek10.jpg);
+    font-family: monospace;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
