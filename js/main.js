@@ -24,6 +24,7 @@ var gLevel = {
     MINE: 2
 }
 var gMinesLoc = []
+var megahintused = false
 
 
 
@@ -34,6 +35,9 @@ var gMinesLoc = []
 
 
 function initGame() {
+    var megabtn = document.querySelector(".megaHint")
+     megabtn.style.backgroundColor = 'green'
+    megahintused = false
     isMegaHint = false
     megaHintFirstLoc
     isMegaHitFirstCell = false
@@ -178,11 +182,12 @@ function onCellClick(cell, i, j) {
         return
 
     }
-    if (isMegaHint && isMegaHitFirstCell) {
+    if (isMegaHint && isMegaHitFirstCell&& !megahintused) {
         MegaHintActive(megaHintFirstLoc.i, megaHintFirstLoc.j, i, j, gBoard)
         setTimeout(function () { MegaHintActive(megaHintFirstLoc.i, megaHintFirstLoc.j, i, j, gBoard); }, 2000);
         var megabtn = document.querySelector(".megaHint")
         megabtn.style.backgroundColor = 'red'
+        megahintused = true
 
         return
     }
@@ -265,6 +270,7 @@ function gameOver() {
     isMegaHint = false
     megaHintFirstLoc
     isMegaHitFirstCell = false
+    megahintused = false
 
 
 
@@ -358,6 +364,7 @@ function victory() {
     isMegaHint = false
     megaHintFirstLoc
     isMegaHitFirstCell = false
+    megahintused = false
 
 }
 
@@ -371,6 +378,7 @@ function changeLevel(el) {
         isMegaHint = false
         megaHintFirstLoc
         isMegaHitFirstCell = false
+        megahintused = false
     }
     else if (el.innerText === "Midium😃") {
         gLevel.SIZE = 8
@@ -381,6 +389,7 @@ function changeLevel(el) {
         isMegaHint = false
         megaHintFirstLoc
         isMegaHitFirstCell = false
+        megahintused = false
     }
     else if (el.innerText === "Hard🤬") {
         gLevel.SIZE = 12
@@ -391,6 +400,9 @@ function changeLevel(el) {
         isMegaHint = false
         megaHintFirstLoc
         isMegaHitFirstCell = false
+        megahintused = false
+       
+
     }
 }
 

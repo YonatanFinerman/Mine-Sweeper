@@ -7,10 +7,10 @@
     <title>MINE GAME</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body  onkeyup="onHandleKey(event)" onload="initGame()" oncontextmenu="return false"  class="backImg" >
+<body  onkeyup="onHandleKey(event)" onload="initGame()" oncontextmenu="return false" style="background-image:url(img/shrek10.jpg) ;" >
     <h5>Made By: Yonatan Finerman</h5>
     <h1>Mine-Sweeper</h1>
-    <button class="darkBtn" onclick="OnDarkMode(this)"><span>🌛</span></button>
+    <button class="darkBtn" onclick="OnDarkMode()">🌛</button>
     <!-- <img src="img/shrek1.png" class="shrek" onclick="initGame()"> -->
     <!-- <h2>lives Left: <span></span></h2> -->
     <h3>⏰time: <span></span></h3>
@@ -30,8 +30,7 @@
 
     <button class="boom" onclick="onBoomClick()">7BOOM💣 <span></span></button>
     <button class="safeBtn" onclick="onSafeClick()">Safe-Clicks: <span></span></button>
-    <button class="megaHint" onclick="onMegaHintClick(this)">MegaHint</button>
-    <!-- <button class="exter" onclick="onClickExterminator(this)">Terminator🤖</button> -->
+    <button class="megaHint" onclick="onMegaHintClick(this)">megaHint <span></span></button>
 
     <div  class="modalWin" >
         <h3>you Win🏆</h3>

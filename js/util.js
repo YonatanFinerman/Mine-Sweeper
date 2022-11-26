@@ -226,6 +226,9 @@ function hintUsed(cellI, cellJ, mat) {
             const elCell = document.querySelector(`.cell-${location.i}-${location.j}`)
             elCell.innerHTML = mat[i][j].negsCounter
             elCell.classList.toggle("closed")
+            if(mat[i][j].isMine){
+                elCell.innerHTML='💣'
+            }
 
 
 
@@ -308,6 +311,9 @@ function MegaHintActive(cellI1, cellJ1, cellI2, cellJ2, mat) {
             const elCell = document.querySelector(`.cell-${location.i}-${location.j}`)
             elCell.innerHTML = mat[i][j].negsCounter
             elCell.classList.toggle("closed")
+            if(mat[i][j].isMine){
+                elCell.innerHTML=MINE
+            }
 
 
 
