@@ -273,16 +273,16 @@ function OnDarkMode(el) {
     elBtn3.classList.toggle("dark")
     elHint.classList.toggle("dark")
 
-    // if (!gIsDarkOn){
-    //     document.body.style.backgroundImage = "url('image.png')";
-    //     gIsDarkOn = true
+    if (!gIsDarkOn){
+        document.body.style.backgroundImage = "url('image.png')";
+        gIsDarkOn = true
 
-    // }
-    // else if (gIsDarkOn){
-    //     document.body.style.backgroundImage = "url('./img/shrek10.jpg')";
-    //     gIsDarkOn = false
+    }
+    else if (gIsDarkOn){
+        document.body.style.backgroundImage = "url('./img/shrek10.jpg')";
+        gIsDarkOn = false
 
-    // }
+    }
 
 
 
