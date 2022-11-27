@@ -420,6 +420,9 @@ function onRightClick(cell, i, j) {
     // oncontextmenu="onRightClick(event)"
     var elBoard = document.querySelector('.board');
     gBoard[i][j].isShown = true
+    if(checkWin()){
+        victory()
+    }
 
     return false
 }
